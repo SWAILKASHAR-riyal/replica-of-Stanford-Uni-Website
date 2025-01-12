@@ -1,0 +1,740 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+:root {
+    --stanford-red: #FF0000;
+    --dark-red: #B22222; 
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Top Header */
+.top-header {
+    background-color: var(--stanford-red);
+    padding: 0.75rem 0;
+}
+
+.university-name {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.university-name:hover {
+    color: white;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.875rem;
+    padding: 0 0.5rem;
+}
+
+.info-text {
+    color: white;
+    font-size: 0.875rem;
+}
+
+/* Main Navigation */
+.main-nav {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-nav .nav-link {
+    color: #2E2D29;
+    padding: 1rem 1.25rem;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 80vh;
+    background: url('https://cdn.britannica.com/25/121725-050-8BF363EC/Hoover-Tower-Stanford-University-California.jpg') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 5rem;
+    font-weight: 300;
+}
+
+/* Explore Button */
+.explore-button {
+    background: var(--stanford-red);
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    display: block;
+}
+
+.explore-button:hover {
+    background: var(--dark-red);
+    color: white;
+}
+
+/* Mission Section */
+.mission {
+    padding: 4rem 0;
+}
+
+.mission h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #2E2D29;
+}
+
+.mission p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #2E2D29;
+}
+
+/* News Section */
+.news-section {
+    background: #F4F4F4;
+    width: 100% !important;
+}
+
+.news-category {
+    color: var(--stanford-red);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.news-card {
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.news-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+}
+
+.news-section {
+    padding: 40px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #2e2d29;
+    margin-bottom: 40px;
+}
+
+.news-card {
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 100%;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    color: inherit;
+}
+
+.news-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 20px;
+}
+
+.category-tag {
+    color: var(--stanford-red);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.news-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+    color: #2e2d29;
+}
+
+.large-card {
+    background-image: url("https://img.freepik.com/free-photo/high-angle-bonfire-nature_23-2148506949.jpg?t=st=1736661823~exp=1736665423~hmac=c7a0d0c4b1ef53f1532bf42ce9c76d78130f1331aec179b3e2e57003bfad48a5&w=360") !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.large-card .news-img {
+    height: 300px;
+}
+
+.large-card .news-title {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.large-card {
+    position: relative;
+    background: var(--dark-red);
+}
+
+.large-card .news-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: white;
+}
+
+.more-news-btn {
+    background-color: var(--stanford-red);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    font-weight: 600;
+    display: block;
+    width: 200px;
+    margin: 40px auto 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.more-news-btn:hover {
+    background-color: var(--dark-red);
+    color: white;
+}
+
+.academics-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.education-card {
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.education-card:hover {
+    color: inherit;
+}
+
+.education-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.card-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--stanford-red);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.learn-more {
+    color: blue !important;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.learn-more:after {
+    content: ' >';
+}
+
+.schools-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.schools-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.schools-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.school-link {
+    color: blue;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.school-link:not(:last-child):after {
+    content: '|';
+    margin-left: 15px;
+    color: #2e2d29;
+}
+
+.more-button {
+    background-color: var(--stanford-red);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    font-weight: 600;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.more-button:hover {
+    background-color: var(--dark-red);
+    color: white;
+}
+
+.quote-section {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust as needed */
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    padding: 150px !important;
+}
+
+.quote-bg {
+    background: url('https://www.stanford.edu/wp-content/uploads/2024/08/Tadashi-homesite-1499x750.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.quote-con {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.unique-quote-image {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.unique-quote-text {
+    font-style: italic;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.unique-quote-author {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.unique-quote-more {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.unique-quote-more:hover {
+    text-decoration: underline;
+}
+
+.research-sec {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+    color: #333;
+}
+
+.unique-research-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.unique-research-subtitle {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.unique-research-divider {
+    width: 100%;
+    margin: 0 auto 20px auto;
+    border: 1px solid #222121;
+}
+
+.unique-research-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.unique-research-stat {
+    text-align: center;
+    max-width: 200px;
+}
+
+.unique-research-stat-number {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.unique-research-stat-description {
+    font-size: 0.9em;
+    color: #777;
+}
+
+.unique-research-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--stanford-red);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.unique-research-button:hover {
+    background-color: var(--dark-red);
+}
+
+.event-card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.event-card .event-date {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.event-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.more-events-btn {
+    background-color: var(--dark-red);
+    color: white;
+    font-weight: bold;
+}
+
+.more-events-btn:hover {
+    background-color: var(--stanford-red);
+}
+
+.health-card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.health-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.more-health-btn {
+    background-color: var(--dark-red);
+    color: white;
+    font-weight: bold;
+}
+
+.more-health-btn:hover {
+    background-color: var(--stanford-red);
+}
+
+.admission-card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.admission-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.more-admission-btn {
+    background-color: var(--dark-red);
+    color: white;
+    font-weight: bold;
+    border-radius: 0;
+}
+
+.more-admission-btn:hover {
+    background-color: var(--stanford-red);
+}
+
+.hed {
+    text-align: left;
+}
+
+.last-section {
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('https://www.stanford.edu/wp-content/uploads/2021/10/dish-andrew-lg-1499x551.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    background-color: #F4F4F4;
+    width: 100%;
+    padding: 15px;
+}
+
+.social-icons a {
+    color: #333;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-top {
+    background-color: white;
+    padding: 2rem 0;
+}
+
+.footer-bottom {
+    background-color: var(--stanford-red);
+    padding: 1rem 0;
+    color: white;
+}
+
+.footer-section h3 {
+    color: var(--stanford-red);
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: #2E2D29;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+    color: var(--stanford-red);
+}
+
+.right-buttons {
+    text-align: right;
+}
+
+.right-buttons .btn {
+    border: 1px solid #2E2D29;
+    color: #2E2D29;
+    margin-bottom: 0.5rem;
+    width: 200px;
+    text-align: center;
+    border-radius: 0;
+    padding: 0.5rem;
+}
+
+.right-buttons .btn:hover {
+    background-color: #2E2D29;
+    color: white;
+}
+
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.9rem;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.stanford-logo {
+    width: 160px;
+    margin-bottom: 1rem;
+}
+
+/* Responsive */
+
+@media (max-width: 1200px) {
+    body {
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 80%;
+    }
+
+    .top-header, .main-nav, .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .top-nav a {
+        padding: 0.5rem 0;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .news-card, .health-card, .admission-card {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .top-header .university-name {
+        font-size: 1.2rem;
+    }
+
+    .news-img, .health-card img, .event-card img {
+        height: 150px;
+    }
+
+    .news-title {
+        font-size: 1rem;
+    }
+}
+
+img {
+    max-width: 100% !important;
+    height: auto;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .btn {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+}
+
+.top-nav, .footer-section ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .top-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .top-nav {
+        display: none !important;
+    }
+
+    .footer-section ul {
+        text-align: center;
+    }
+    .below-nav {
+        display: none !important;
+    }
+    .bar-nav {
+        display: block !important;
+    }
+}
